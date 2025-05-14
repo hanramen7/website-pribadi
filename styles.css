@@ -1,0 +1,278 @@
+/* ========== Global Reset & Base Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in total element width/height */
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+/* ========== Navigation Bar ========== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Logo Text */
+.Bintang {
+  margin-left: 150px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Navigation Menu Items */
+.nav-option {
+  margin-right: 150px;
+  list-style: none;
+  display: flex;
+  gap: 80px; /* Space between each menu item */
+}
+
+/* Link Styles for Logo and Menu */
+.nav > div a,
+.nav-option li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect for Links */
+.nav > div a:hover,
+.nav-option li a:hover {
+  color: #007BFF;
+}
+
+/* ========== Greeting & Profile Image Section ========== */
+#greet, #profile-image {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* Left Side Text Greeting */
+#greet {
+  padding-left: 185px;
+}
+
+/* Greeting Title */
+#greet h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Custom Colored Words */
+.frog-shirt-color {
+  color: #0346ff;
+  font-weight: bold;
+}
+
+.frog-color {
+  color: #5d8f36;
+  font-weight: bold;
+}
+
+/* Right Side Image */
+#profile-image {
+  padding-right: 5%;
+}
+
+#profile-image img {
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* ========== About Section ========== */
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#about-section img {
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+#about-section h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+#about-section h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* ========== Link Style (e.g. from ChatGPT suggestion) ========== */
+.chatgpt {
+  text-decoration: none;
+  color: black;
+}
+
+.chatgpt:hover {
+  color: #007BFF;
+}
+
+/* ========== Portfolio Section ========== */
+#portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#portfolio-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#portfolio-section img {
+  width: 700px;
+  max-width: 80%;
+  margin-bottom: 100px;
+}
+
+/* ========== Contact Section ========== */
+#contact-section {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#contact-section img {
+  width: 700px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Layout */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Inputs and Textarea */
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Submit Button */
+#contact-form button {
+  padding: 12px;
+  background-color: #0346ff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+#contact-form button:hover {
+  background-color: #0346ff;
+}
+
+
+/* Social Links */
+.social-media a {
+  color: #0346ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* ========== CV Section ========== */
+#cv-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#cv-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1c1e21;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#cv-section img {
+  width: 700px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+/* CV Section Blocks */
+.cv-block {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.cv-block h2 {
+  font-size: 1.8rem;
+  color: #3f6fff;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cv-block ul {
+  padding-left: 20px;
+}
+
+.cv-block li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== Footer ========== */
+.footer {
+  background-color: #0346ff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 60px;
+}
